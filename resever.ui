@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>resever</class>
+ <widget class="QMainWindow" name="resever">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgba(47, 47, 47, 220);</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="RESEVER">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>-10</y>
+      <width>241</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mali Medium</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;RESEVER&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="photo">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>20</y>
+      <width>691</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/ASUS/OneDrive/เดสก์ท็อป/สไลด์1.PNG</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameTEXT">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>160</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mali Medium</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;NAME : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="name">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>170</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="cursorMoveStyle">
+     <enum>Qt::LogicalMoveStyle</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teltext">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>230</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mali Medium</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;TEL : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tel">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>240</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="locationtext">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>300</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mali Medium</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ZONE/LOCATION : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Clientlisttext">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>480</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mali Medium</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Client lists &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editlist">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>490</y>
+      <width>75</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(241, 161, 0);
+font: 57 10pt &quot;Mali Medium&quot;;
+color: rgb(255, 255, 255);
+border-radius:5;</string>
+    </property>
+    <property name="text">
+     <string>Edit List</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="total">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>440</y>
+      <width>311</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mali Medium</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;TOTAL 0.00 BAHT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>570</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mali Medium</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 243, 0);
+color: rgb(255, 255, 255);
+border-radius:5;</string>
+    </property>
+    <property name="text">
+     <string>SAVE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>570</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mali Medium</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);
+border-radius:5;</string>
+    </property>
+    <property name="text">
+     <string>RESET</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="zone_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>310</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A1 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A2 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A3 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A4 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A5 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A6 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A7 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A8 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A9 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A10 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A11 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A12 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A13 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A14 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A15 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A16 / 500</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B1 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B2 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B3 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B4 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B5 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B6 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B7 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B8 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B9 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B10 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B11 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B12 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B13 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B14 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B15 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C1 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C2 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C3 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C4 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C5 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C6 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C7 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C8 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C9 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C10 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C11 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C12 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C13 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C14 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C15 / 400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D1 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D2 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D3 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D4 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D5 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D6 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D7 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D8 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D9 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D10 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D11 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D12 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D13 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D14 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D15 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D16 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D17 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D18 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D19 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D20 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D21 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D22 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D23 / 300</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D24 / 300</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>520</y>
+      <width>691</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 220);</string>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>39</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>40</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>30</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>tel</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>zone</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>380</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(71, 214, 0);
+color: rgb(255, 255, 255);
+font: 8pt &quot;MS Shell Dlg 2&quot;;
+font: 57 16pt &quot;Mali Medium&quot;;
+border-radius:5;</string>
+    </property>
+    <property name="text">
+     <string>SUM</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editlist_2">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>490</y>
+      <width>75</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(167, 167, 167);
+font: 57 10pt &quot;Mali Medium&quot;;
+color: rgb(255, 255, 255);
+border-radius:5;</string>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+   <zorder>Clientlisttext</zorder>
+   <zorder>RESEVER</zorder>
+   <zorder>photo</zorder>
+   <zorder>nameTEXT</zorder>
+   <zorder>name</zorder>
+   <zorder>teltext</zorder>
+   <zorder>tel</zorder>
+   <zorder>locationtext</zorder>
+   <zorder>editlist</zorder>
+   <zorder>total</zorder>
+   <zorder>save</zorder>
+   <zorder>reset</zorder>
+   <zorder>zone_2</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>editlist_2</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
