@@ -1,5 +1,4 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QMessageBox
 import pymysql
 import resever5
 import aboutus
@@ -212,11 +211,11 @@ class Ui_Main(object):
         self.btdelete_6.setText(_translate("Main", "EDIT"))
         self.btresever.clicked.connect(self.openupload)
         self.btaboutus.clicked.connect(self.openaboutus)
-        self.btdelete_3.clicked.connect(self.refresh)
-        self.btdelete_4.clicked.connect(self.removeDatabase)
-        self.btdelete_4.clicked.connect(self.refresh)
-        self.btdelete_5.clicked.connect(self.fecthID)
-        self.btdelete_6.clicked.connect(self.editDatabase)
+        self.btdelete_3.clicked.connect(self.refresh)             #ปุ่มรีเฟส
+        self.btdelete_4.clicked.connect(self.removeDatabase)      #ปุ่มลบ
+        self.btdelete_4.clicked.connect(self.refresh)             #ปุ่มลบให้รีเฟส
+        self.btdelete_5.clicked.connect(self.fecthID)             #ปุ่มเช็คไอดี
+        self.btdelete_6.clicked.connect(self.editDatabase)        #ปุ่มเเก้ไข
 
     def openupload(self):
         self.window = QtWidgets.QMainWindow()
@@ -242,7 +241,7 @@ class Ui_Main(object):
             self.tablewidget.insertRow(tablerow)
             self.tablewidget.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(i[0])))
             self.tablewidget.setItem(tablerow, 1, QtWidgets.QTableWidgetItem(i[1]))
-            self.tablewidget.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(str(i[2])))
+            self.tablewidget.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(i[2]))
             self.tablewidget.setItem(tablerow, 3, QtWidgets.QTableWidgetItem(i[3]))
             tablerow += 1
 
@@ -299,23 +298,22 @@ class Ui_Main(object):
         cursor.execute("SELECT zone FROM resever WHERE ID = %s", ID)
         zone = cursor.fetchone()
         self.idinput_3.setText(name[0])
-        self.idinput_4.setText(str(tel[0]))
+        self.idinput_4.setText(tel[0])
         self.idinput_5.setText(zone[0])
         con.close()
     
-    def editDatabase(self):
-         ID = self.idinput_2.text()                                              #ปุ่มedit
+    def editDatabase(self):                                             #ปุ่มedit
          name = self.idinput_3.text()
          tel = self.idinput_4.text()
          zone = self.idinput_5.text()
-         if (ID=='' or name == '' or tel == '' or zone == ''):
+         if (   name == '' or tel == '' or zone == ''):
             print("Please fill all data")
          else:
             con = pymysql.connect(host="localhost", database="gewksix",
                                   user='root', password='')
             cursor = con.cursor()
-            cursor.execute("UPDATE resever SET ID=%s, name=%s, tel=%s, zone=%s " ,
-                           (ID,name, tel, zone))
+            cursor.execute("UPDATE resever SET  name=%s, tel=%s, zone=%s WHERE ID = %s",
+                           (name, tel, zone,ID))
             print("Edit data successfully")
             con.commit()
 

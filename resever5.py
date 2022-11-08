@@ -357,7 +357,7 @@ class Ui_resever(object):
     def insertDBS(self):
         names = self.name.text()
         tels = self.tel.text()
-        zones = str(self.zone_2.currentText().split('/')[0])
+        zones = str(self.zone_2.currentText().split('/')[0].strip())
         if ( names == '' or tels == '' or zones == '' ):
             print("Please fill all data")
         else:
@@ -386,7 +386,7 @@ class Ui_resever(object):
             self.tableWidget.insertRow(tablerow)
             self.tableWidget.setItem(tablerow, 0, QtWidgets.QTableWidgetItem(str(i[0])))
             self.tableWidget.setItem(tablerow, 1, QtWidgets.QTableWidgetItem(i[1]))
-            self.tableWidget.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(str(i[2])))
+            self.tableWidget.setItem(tablerow, 2, QtWidgets.QTableWidgetItem(i[2]))
             self.tableWidget.setItem(tablerow, 3, QtWidgets.QTableWidgetItem(i[3]))
             tablerow += 1
 
